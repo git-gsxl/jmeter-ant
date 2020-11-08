@@ -10,10 +10,10 @@
     <property name="jmeter.home" value="/var/jenkins_home/apache-jmeter-5.3" />
 	
 	<!-- （2）jmeter生成jtl格式的结果报告的路径-->
-    <!-- jmeter生成jtl格式的结果报告的路径， value="/var/jenkins_home/workspace/demo/jtl"-->
-	<!-- jmeter生成html格式的结果报告的路径，value="/var/jenkins_home/workspace/demo/html"-->
-    <property name="jmeter.result.jtl.dir" value="/var/jenkins_home/workspace/demo/jtl" />
-    <property name="jmeter.result.html.dir" value="/var/jenkins_home/workspace/demo/html" />
+    <!-- jmeter生成jtl格式的结果报告的路径， value="C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins.jenkins/workspace/jtl"-->
+	<!-- jmeter生成html格式的结果报告的路径，value="C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins.jenkins/workspace/html"-->
+    <property name="jmeter.result.jtl.dir" value="C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins.jenkins/workspace/jtl" />
+    <property name="jmeter.result.html.dir" value="C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins.jenkins/workspace/html" />
 	
 	<!-- （3）生成的报告的前缀:value-->
     <property name="ReportName" value="InterfaceReport"/>
@@ -32,7 +32,7 @@
 		
 		
              <!-- （4）声明要运行的脚本。*.jmx 指包含此目录下的所有jmeter脚本，需要改成自己本地的目录-->
-            <testplans dir="/var/jenkins_home/workspace/demo" includes="*.jmx" />
+            <testplans dir="C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins.jenkins/workspace" includes="*.jmx" />
 			
 			
             <property name="jmeter.save.saveservice.output_format" value="xml"/>
@@ -51,7 +51,7 @@
 			  out="${jmeter.result.htmlName}" 
 			  
 		
-			  style="/var/jenkins_home/workspace/demo/xsl/jmeter.results.shanhe.me.xsl">
+			  style="C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins.jenkins/workspace/xsl/jmeter.results.shanhe.me.xsl">
 			  <!--（5）样式目录：/extras/xxx.xsl -->
  
 			  
